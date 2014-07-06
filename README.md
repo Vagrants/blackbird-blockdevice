@@ -1,4 +1,3 @@
-blackbird-blockdevice
-=====================
+TODO: Write README
 
-Blockdevice Low level descovery.
+This plugin depends on `lsblk` command.
