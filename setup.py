@@ -8,7 +8,7 @@ except ImportError:
 
 setup(
     name='blackbird-blockdevice',
-    version='0.1.0',
+    version='0.1.1',
     description=(
         'Low level discovery of block devices.'
     ),

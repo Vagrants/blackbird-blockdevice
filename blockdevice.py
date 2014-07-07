@@ -6,8 +6,7 @@ Low level descovery of block device.
 
 import subprocess
 
-#from blackbird.plugins import base
-import base
+from blackbird.plugins import base
 
 
 class ConcreteJob(base.JobBase):

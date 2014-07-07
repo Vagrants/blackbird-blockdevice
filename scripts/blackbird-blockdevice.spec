@@ -1,7 +1,7 @@
 %{!?python_sitelib: %define python_sitelib %(%{__python} -c "from distutils.sysconfig import get_python_lib; print get_python_lib()")}
 
 %define name blackbird-blockdevice
-%define version 0.1.0
+%define version 0.1.1
 %define unmangled_version %{version}
 %define release 1%{dist}
 %define include_dir /etc/blackbird/conf.d
@@ -45,11 +45,13 @@ rm -rf $RPM_BUILD_ROOT
 
 %files -f INSTALLED_FILES
 %defattr(-,root,root)
-%dir %{include_dir}
 %config(noreplace) %{include_dir}/blockdevice.cfg
-%dir %{plugins_dir}
 %{plugins_dir}/blockdevice.*
 
 %changelog
+* Fri Jul 6 2014 ARASHI, Jumpei <jumpei.arashi@arashike.com> - 0.1.1-1
+- Remove include_dir and plugins_dir from '%dir'
+- Revise import base plugin module path
+
 * Fri Jul 6 2014 ARASHI, Jumpei <jumpei.arashi@arashike.com> - 0.1.0-1
 - Initial package
