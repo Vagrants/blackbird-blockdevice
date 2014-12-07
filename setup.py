@@ -15,4 +15,11 @@ setup(
     author='ARASHI, Jumpei',
     author_email='jumpei.arashi@arashike.com',
     url='https://github.com/Vagrants/blackbird-blockdevice',
+    install_requires=[
+        'blackbird'
+    ],
+    classifiers=[
+        'Programming Language :: Python :: 2.6',
+        'Programming Language :: Python :: 2.7',
+    ]
 )
